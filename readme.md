@@ -67,7 +67,7 @@ incidents-client/
 1. Clonar el repositorio:
 
 ```bash
-git clone <repo-url>
+git clone https://github.com/lfmendoza/incidents-client.git
 cd incidents-client
 ```
 

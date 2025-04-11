@@ -1,0 +1,20 @@
+{
+  "name": "incidents-client",
+  "version": "1.0.0",
+  "description": "Cliente vanilla JS para API de incidentes",
+  "main": "index.html",
+  "scripts": {
+    "start": "serve -s .",
+    "dev": "serve -s . -l 8080"
+  },
+  "keywords": [
+    "vanilla-js",
+    "web-components",
+    "web-workers"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "serve": "^14.2.0"
+  }
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Sistema de Gestión de Incidentes</title>
+    <meta
+      name="description"
+      content="Plataforma de gestión de incidentes empresariales"
+    />
+
+    <!-- Preload de recursos críticos -->
+    <link rel="preload" href="src/app.js" as="script" />
+    <link rel="preload" href="src/styles/main.css" as="style" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="assets/icons/logo.svg" type="image/svg+xml" />
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="src/styles/main.css" />
+
+    <!-- Política de seguridad de contenido -->
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; connect-src 'self' http://localhost:3000"
+    />
+  </head>
+  <body>
+    <!-- Shell de aplicación -->
+    <app-shell></app-shell>
+
+    <!-- Scripts con carga diferida no bloqueantes -->
+    <script type="module" src="src/app.js"></script>
+
+    <!-- Fallback para navegadores sin soporte para módulos ES -->
+    <script nomodule>
+      document.body.innerHTML =
+        "<p>Este navegador no es compatible con la aplicación. Por favor, utiliza un navegador moderno como Chrome, Firefox, Safari o Edge.</p>";
+    </script>
+  </body>
+</html>
